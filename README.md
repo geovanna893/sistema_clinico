@@ -24,4 +24,4 @@ Otimizar processos administrativos de clínicas, reduzindo erros de agendamento 
 Estrutura principal:
 - clientes – cadastro de pacientes
 - medicos - cadastro de médicos
-- produtos / intens_venda – para expansão futura
+- consultas - agendamento de consultas
