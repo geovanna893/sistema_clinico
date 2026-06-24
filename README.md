@@ -7,6 +7,7 @@ Sistema web para gestão de agendamentos de consultas e controle de pagamentos e
 - Luan Matos
 - Lucas Kauan
 - José Carlos
+- Natanael Reis
 
 ## 🎯 Objetivo
 Otimizar processos administrativos de clínicas, reduzindo erros de agendamento e facilitando o agendamento das consultas.
