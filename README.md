@@ -12,8 +12,6 @@ Sistema web para gestão de agendamentos de consultas médicas, controle de paci
 - José Carlos
 - Natanael Reis
 
----
-
 ## 🎯 Objetivo
 
 Otimizar processos administrativos de clínicas médicas, reduzindo erros de agendamento e facilitando o controle de pacientes, médicos e consultas por meio de uma interface web intuitiva.
@@ -23,8 +21,8 @@ Otimizar processos administrativos de clínicas médicas, reduzindo erros de age
 ## ⚙️ Principais Funcionalidades
 
 - **Autenticação** — login e logout com controle de acesso por sessão
-- **Cadastro de pacientes** — com validação de CPF (formato `000.000.000-00`), nome completo, telefone e data de nascimento (mínimo 6 anos)
-- **Cadastro de médicos** — com validação de CRM (formato `CRM/UF 000000`), especialidade e horário de atendimento
+- **Cadastro de pacientes** — com validação de CPF, nome completo, telefone e data de nascimento
+- **Cadastro de médicos** — com validação de CRM, especialidade e horário de atendimento
 - **Agendamento de consultas** — busca de paciente por CPF, seleção de médico e data/hora, com validações de:
   - Dias úteis (segunda a sexta)
   - Horários permitidos: 09:00–12:00 e 14:00–18:00
@@ -38,14 +36,13 @@ Otimizar processos administrativos de clínicas médicas, reduzindo erros de age
 ## 🛠️ Tecnologias
 
 - **Python 3** + **Django**
-- **Bootstrap 5** — estilização e componentes (modais, tabelas, alertas)
-- **jQuery** + **AJAX** — submissão de formulários sem recarregar a página
-- **FullCalendar 6** — exibição do calendário de consultas
-- **SQLite** (padrão Django) — banco de dados
-
+- **Bootstrap 5** 
+- **jQuery** + **AJAX**
+- **FullCalendar 6**
+- **SQLite**
 ---
 
-## 📁 Estrutura do App (`web/`)
+## 📁 Estrutura do App
 
 ```
 web/
@@ -65,45 +62,6 @@ web/
     ├── add_paciente_modal.html
     └── add_medico_modal.html
 ```
-
----
-
-## 🚀 Como Executar
-
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
-   ```
-
-2. **Crie e ative um ambiente virtual:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate      # Linux/Mac
-   venv\Scripts\activate         # Windows
-   ```
-
-3. **Instale as dependências:**
-   ```bash
-   pip install django
-   ```
-
-4. **Execute as migrações:**
-   ```bash
-   python manage.py migrate
-   ```
-
-5. **Crie um superusuário:**
-   ```bash
-   python manage.py createsuperuser
-   ```
-
-6. **Inicie o servidor:**
-   ```bash
-   python manage.py runserver
-   ```
-
-7. **Acesse no navegador:** `http://127.0.0.1:8000/`
 
 ---
 
